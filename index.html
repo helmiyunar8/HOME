@@ -1,84 +1,95 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<title>Portal Belajar TKJ</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Portal Belajar TKJ SMKN 7 Luwu</title>
 
 <style>
 
 body{
-font-family: Arial;
-background:#e9ecef;
-text-align:center;
+font-family:Arial;
+background:#dfe3ea;
 margin:0;
+text-align:center;
 }
 
 .header{
-background:#2f5fa7;
+background:#3b66a5;
 color:white;
 padding:20px;
 font-size:22px;
 }
 
-.container{
-margin-top:30px;
+.menu{
+margin-top:40px;
 }
 
 .btn{
 display:block;
-width:80%;
-max-width:320px;
+width:320px;
 margin:15px auto;
-padding:15px;
-background:#4a73b9;
+padding:16px;
+background:#4f74b5;
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
 font-size:18px;
 }
 
 .btn:hover{
-background:#365a96;
+background:#365d9c;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="header">
-Portal Belajar TKJ  
-SMK Negeri 7 Luwu
+Portal Belajar TKJ SMK Negeri 7 Luwu
 </div>
 
-<div class="container">
+<div class="menu">
 
-<a class="btn" href="https://helmiyunar8.github.io/absensi-murid-smkn7luwu/">📋 ABSEN KI</a>
-
-<a class="btn" href="materi-x.html">📚 Materi Kelas X TKJ</a>
-<a class="btn" href="#">📝 Tugas Kelas X TKJ</a>
-
-<a class="btn" href="#">📚 Materi Kelas XI TKJ</a>
-<a class="btn" href="#">📝 Tugas Kelas XI TKJ</a>
-
-<a class="btn" href="#">📚 Materi Kelas XII TKJ</a>
-<a class="btn" href="#">📝 Tugas Kelas XII TKJ</a>
-  <a href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/" target="_blank">
-<div class="menu-btn">📝 TRYOUT TKJ (SISWA)</div>
+<a class="btn" href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/">
+📝 TRYOUT TKJ (SISWA)
 </a>
 
-<a href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/guru.html" target="_blank">
-<div class="menu-btn">📊 DASHBOARD NILAI TRYOUT</div>
+<a class="btn" onclick="loginGuru()">
+🔒 TRYOUT KHUSUS GURU
 </a>
 
-<a href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/monitor.html" target="_blank">
-<div class="menu-btn">🖥 MONITOR UJIAN</div>
+<a class="btn" href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/guru.html">
+📊 REKAP NILAI KELAS
 </a>
 
+<a class="btn" href="https://helmiyunar8.github.io/tryout-tkj-XII-2026/monitor.html">
+🖥 MONITOR UJIAN
+</a>
+
+<a class="btn" href="banksoal.html">
+📚 BANK SOAL TKJ
+</a>
 
 </div>
+
+<script>
+
+function loginGuru(){
+
+let pass = prompt("Masukkan password guru")
+
+if(pass=="tkj7luwu"){
+window.location="https://helmiyunar8.github.io/tryout-tkj-XII-2026/guru.html"
+}else{
+alert("Password salah")
+}
+
+}
+
+</script>
 
 </body>
-
 </html>
